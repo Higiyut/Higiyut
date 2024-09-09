@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
@@ -10,12 +8,8 @@ import '/backend/schema/structs/index.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -81,120 +75,120 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) => appStateNotifier.loggedIn
-          ? entryPage ?? PageWidget()
-          : WhatswssWidget(),
+          ? entryPage ?? const PageWidget()
+          : const WhatswssWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? entryPage ?? PageWidget()
-              : WhatswssWidget(),
+              ? entryPage ?? const PageWidget()
+              : const WhatswssWidget(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
-          builder: (context, params) => HomePageWidget(),
+          builder: (context, params) => const HomePageWidget(),
         ),
         FFRoute(
           name: 'rigster',
           path: '/rigster',
-          builder: (context, params) => RigsterWidget(),
+          builder: (context, params) => const RigsterWidget(),
         ),
         FFRoute(
           name: 'whats',
           path: '/whats',
-          builder: (context, params) => WhatsWidget(),
+          builder: (context, params) => const WhatsWidget(),
         ),
         FFRoute(
           name: 'page',
           path: '/page',
-          builder: (context, params) => PageWidget(),
+          builder: (context, params) => const PageWidget(),
         ),
         FFRoute(
           name: 'blue',
           path: '/blue',
-          builder: (context, params) => BlueWidget(),
+          builder: (context, params) => const BlueWidget(),
         ),
         FFRoute(
           name: 'all',
           path: '/all',
-          builder: (context, params) => AllWidget(),
+          builder: (context, params) => const AllWidget(),
         ),
         FFRoute(
           name: 'search',
           path: '/search',
-          builder: (context, params) => SearchWidget(),
+          builder: (context, params) => const SearchWidget(),
         ),
         FFRoute(
           name: 'favort',
           path: '/favort',
-          builder: (context, params) => FavortWidget(),
+          builder: (context, params) => const FavortWidget(),
         ),
         FFRoute(
           name: 'sicial',
           path: '/sicial',
-          builder: (context, params) => SicialWidget(),
+          builder: (context, params) => const SicialWidget(),
         ),
         FFRoute(
           name: 'profil',
           path: '/profil',
-          builder: (context, params) => ProfilWidget(),
+          builder: (context, params) => const ProfilWidget(),
         ),
         FFRoute(
           name: 'video',
           path: '/video',
-          builder: (context, params) => VideoWidget(),
+          builder: (context, params) => const VideoWidget(),
         ),
         FFRoute(
           name: 'time',
           path: '/time',
-          builder: (context, params) => TimeWidget(),
+          builder: (context, params) => const TimeWidget(),
         ),
         FFRoute(
           name: 'videoview',
           path: '/videoview',
-          builder: (context, params) => VideoviewWidget(),
+          builder: (context, params) => const VideoviewWidget(),
         ),
         FFRoute(
           name: 'fdg',
           path: '/fdg',
-          builder: (context, params) => FdgWidget(),
+          builder: (context, params) => const FdgWidget(),
         ),
         FFRoute(
           name: 'profileedit',
           path: '/profileedit',
-          builder: (context, params) => ProfileeditWidget(),
+          builder: (context, params) => const ProfileeditWidget(),
         ),
         FFRoute(
           name: 'manyview',
           path: '/manyview',
-          builder: (context, params) => ManyviewWidget(),
+          builder: (context, params) => const ManyviewWidget(),
         ),
         FFRoute(
           name: 'wrong',
           path: '/wrong',
-          builder: (context, params) => WrongWidget(),
+          builder: (context, params) => const WrongWidget(),
         ),
         FFRoute(
           name: 'manga',
           path: '/manga',
-          builder: (context, params) => MangaWidget(),
+          builder: (context, params) => const MangaWidget(),
         ),
         FFRoute(
           name: 'notfication',
           path: '/notfication',
-          builder: (context, params) => NotficationWidget(),
+          builder: (context, params) => const NotficationWidget(),
         ),
         FFRoute(
           name: 'gift',
           path: '/gift',
-          builder: (context, params) => GiftWidget(),
+          builder: (context, params) => const GiftWidget(),
         ),
         FFRoute(
           name: 'whatswss',
           path: '/whatswss',
-          builder: (context, params) => WhatswssWidget(),
+          builder: (context, params) => const WhatswssWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
@@ -435,7 +429,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

@@ -1,13 +1,7 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_rive_controller.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'home_page_widget.dart' show HomePageWidget;
-import 'package:rive/rive.dart' hide LinearGradient;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class HomePageModel extends FlutterFlowModel<HomePageWidget> {
   ///  State fields for stateful widgets in this page.
@@ -29,11 +23,11 @@ class HomePageModel extends FlutterFlowModel<HomePageWidget> {
 
   @override
   void initState(BuildContext context) {
-    riveAnimationAnimationsList.forEach((name) {
+    for (var name in riveAnimationAnimationsList) {
       riveAnimationControllers.add(FlutterFlowRiveController(
         name,
       ));
-    });
+    }
 
     passwordVisibility = false;
   }

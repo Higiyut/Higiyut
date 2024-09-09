@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_video_player.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'dfsd_model.dart';
 export 'dfsd_model.dart';
@@ -49,7 +48,7 @@ class _DfsdWidgetState extends State<DfsdWidget> {
 
     return Stack(
       children: [
-        Container(
+        SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: PageView(
@@ -59,7 +58,7 @@ class _DfsdWidgetState extends State<DfsdWidget> {
             scrollDirection: Axis.vertical,
             children: [
               FlutterFlowVideoPlayer(
-                path: widget!.video!,
+                path: widget.video!,
                 videoType: VideoType.network,
                 width: double.infinity,
                 height: double.infinity,
@@ -75,10 +74,10 @@ class _DfsdWidgetState extends State<DfsdWidget> {
         ),
         Stack(
           children: [
-            Stack(
+            const Stack(
               children: [],
             ),
-            Align(
+            const Align(
               alignment: AlignmentDirectional(0.96, 0.5),
               child: Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
@@ -90,7 +89,7 @@ class _DfsdWidgetState extends State<DfsdWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.93, -0.95),
+              alignment: const AlignmentDirectional(0.93, -0.95),
               child: Container(
                 width: 35.0,
                 height: 35.0,
@@ -110,9 +109,9 @@ class _DfsdWidgetState extends State<DfsdWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.67, -0.94),
+              alignment: const AlignmentDirectional(0.67, -0.94),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 7.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 7.0),
                 child: Text(
                   '4A Play',
                   style: FlutterFlowTheme.of(context).titleMedium.override(
@@ -126,7 +125,7 @@ class _DfsdWidgetState extends State<DfsdWidget> {
           ],
         ),
         Align(
-          alignment: AlignmentDirectional(-0.98, -0.98),
+          alignment: const AlignmentDirectional(-0.98, -0.98),
           child: InkWell(
             splashColor: Colors.transparent,
             focusColor: Colors.transparent,
@@ -135,7 +134,7 @@ class _DfsdWidgetState extends State<DfsdWidget> {
             onTap: () async {
               context.safePop();
             },
-            child: Icon(
+            child: const Icon(
               Icons.chevron_left,
               color: Color(0xFFFF7B00),
               size: 59.0,
@@ -143,9 +142,9 @@ class _DfsdWidgetState extends State<DfsdWidget> {
           ),
         ),
         Align(
-          alignment: AlignmentDirectional(0.95, 0.31),
+          alignment: const AlignmentDirectional(0.95, 0.31),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
             child: ToggleIcon(
               onPressed: () async {
                 safeSetState(
@@ -155,12 +154,12 @@ class _DfsdWidgetState extends State<DfsdWidget> {
                 );
               },
               value: FFAppState().fgdf.contains(currentUserReference),
-              onIcon: Icon(
+              onIcon: const Icon(
                 Icons.favorite_outlined,
                 color: Color(0xFFFB8E06),
                 size: 45.0,
               ),
-              offIcon: Icon(
+              offIcon: const Icon(
                 Icons.favorite_border,
                 color: Color(0xFFF4F3F2),
                 size: 45.0,

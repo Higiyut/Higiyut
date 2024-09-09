@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'blue_model.dart';
 export 'blue_model.dart';
 
@@ -54,7 +51,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                   width: double.infinity,
                   height: 439.0,
                   decoration: BoxDecoration(
-                    color: Color(0x00FFFFFF),
+                    color: const Color(0x00FFFFFF),
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: ClipRRect(
@@ -71,7 +68,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                   width: double.infinity,
                   height: 440.0,
                   decoration: BoxDecoration(
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       colors: [Color(0x0005040D), Color(0xFFFD8A07)],
                       stops: [0.0, 1.0],
                       begin: AlignmentDirectional(0.0, -1.0),
@@ -82,7 +79,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(38.0, 416.0, 38.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(38.0, 416.0, 38.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -91,7 +88,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                         width: 141.0,
                         height: 42.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF6BC00),
+                          color: const Color(0xFFF6BC00),
                           borderRadius: BorderRadius.circular(6.0),
                         ),
                         child: Row(
@@ -99,13 +96,13 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.play_arrow_rounded,
                               color: Colors.white,
                               size: 38.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 22.0, 5.0),
                               child: AutoSizeText(
                                 'بینین',
@@ -113,7 +110,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'elyas',
-                                      color: Color(0xFFEBEFF2),
+                                      color: const Color(0xFFEBEFF2),
                                       fontSize: 24.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -130,7 +127,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6.0),
                           border: Border.all(
-                            color: Color(0xFFFFF500),
+                            color: const Color(0xFFFFF500),
                           ),
                         ),
                         child: Row(
@@ -138,13 +135,13 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Icon(
+                            const Icon(
                               Icons.add_rounded,
                               color: Color(0xFFFDF6F6),
                               size: 38.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 22.0, 5.0),
                               child: AutoSizeText(
                                 'دڵخواز',
@@ -152,7 +149,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'elyas',
-                                      color: Color(0xFFF2F2F1),
+                                      color: const Color(0xFFF2F2F1),
                                       fontSize: 24.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -174,7 +171,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                   onTap: () async {
                     context.safePop();
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.chevron_left_rounded,
                     color: Color(0xFFF9A609),
                     size: 66.0,
@@ -183,12 +180,12 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(12.0, 22.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(12.0, 22.0, 0.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Padding(
+                  const Padding(
                     padding:
                         EdgeInsetsDirectional.fromSTEB(22.0, 0.0, 0.0, 0.0),
                     child: Icon(
@@ -197,7 +194,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                       size: 28.0,
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 0.0),
                     child: Icon(
                       Icons.star_rounded,
@@ -209,13 +206,13 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                     '4/5',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Readex Pro',
-                          color: Color(0xFFECF0F2),
+                          color: const Color(0xFFECF0F2),
                           letterSpacing: 0.0,
                         ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(166.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(166.0, 0.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -225,7 +222,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'elyas',
-                                    color: Color(0xFFF3F7FB),
+                                    color: const Color(0xFFF3F7FB),
                                     fontSize: 28.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w500,
@@ -243,7 +240,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 7.0, 12.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 7.0, 12.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -254,7 +251,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                         minFontSize: 14.0,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
                               fontFamily: 'elyas',
-                              color: Color(0xFFEEF6FB),
+                              color: const Color(0xFFEEF6FB),
                               fontSize: 12.0,
                               letterSpacing: 0.0,
                               fontWeight: FontWeight.w500,
@@ -268,16 +265,16 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
             ),
             Stack(
               children: [
-                Container(
+                SizedBox(
                   height: 200.0,
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 0.0, 0.0),
                     child: Column(
                       children: [
                         Align(
-                          alignment: Alignment(0.0, 0),
+                          alignment: const Alignment(0.0, 0),
                           child: TabBar(
-                            labelColor: Color(0xFFF3F5F8),
+                            labelColor: const Color(0xFFF3F5F8),
                             unselectedLabelColor:
                                 FlutterFlowTheme.of(context).secondaryText,
                             labelStyle: FlutterFlowTheme.of(context)
@@ -288,10 +285,10 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                   fontWeight: FontWeight.w500,
                                   useGoogleFonts: false,
                                 ),
-                            unselectedLabelStyle: TextStyle(),
-                            indicatorColor: Color(0xFFE7810C),
-                            padding: EdgeInsets.all(2.0),
-                            tabs: [
+                            unselectedLabelStyle: const TextStyle(),
+                            indicatorColor: const Color(0xFFE7810C),
+                            padding: const EdgeInsets.all(2.0),
+                            tabs: const [
                               Tab(
                                 text: 'وەرزی ١',
                                 iconMargin: EdgeInsetsDirectional.fromSTEB(
@@ -313,7 +310,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 24.0, 12.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -322,7 +319,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 66.0, 0.0),
                                             child: Text(
                                               'ئەلقەی ١',
@@ -331,7 +328,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                                   .bodyMedium
                                                   .override(
                                                     fontFamily: 'elyas',
-                                                    color: Color(0xFFFBFDFF),
+                                                    color: const Color(0xFFFBFDFF),
                                                     fontSize: 19.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -351,7 +348,7 @@ class _BlueWidgetState extends State<BlueWidget> with TickerProviderStateMixin {
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
-                                              Align(
+                                              const Align(
                                                 alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(

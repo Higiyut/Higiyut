@@ -5,10 +5,7 @@ import '/components/fgg_widget.dart';
 import '/components/sicxil_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sicial_model.dart';
 export 'sicial_model.dart';
 
@@ -45,7 +42,7 @@ class _SicialWidgetState extends State<SicialWidget> {
       body: Stack(
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
             child: Stack(
               children: [
                 FutureBuilder<ApiCallResponse>(
@@ -74,7 +71,7 @@ class _SicialWidgetState extends State<SicialWidget> {
                                     .map<PostStruct?>(PostStruct.maybeFromMap)
                                     .toList() as Iterable<PostStruct?>)
                                 .withoutNulls
-                                ?.toList() ??
+                                .toList() ??
                             [];
 
                         return SingleChildScrollView(
@@ -83,7 +80,7 @@ class _SicialWidgetState extends State<SicialWidget> {
                             children: List.generate(aaa.length, (aaaIndex) {
                               final aaaItem = aaa[aaaIndex];
                               return Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 20.0, 0.0, 0.0),
                                 child: DsfgWidget(
                                   key: Key(
@@ -100,18 +97,18 @@ class _SicialWidgetState extends State<SicialWidget> {
                     );
                   },
                 ),
-                Stack(
+                const Stack(
                   children: [],
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 22.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 22.0),
                     child: wrapWithModel(
                       model: _model.sicxilModel,
                       updateCallback: () => safeSetState(() {}),
-                      child: SicxilWidget(),
+                      child: const SicxilWidget(),
                     ),
                   ),
                 ),
@@ -119,7 +116,7 @@ class _SicialWidgetState extends State<SicialWidget> {
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0.95, -1.04),
+            alignment: const AlignmentDirectional(0.95, -1.04),
             child: InkWell(
               splashColor: Colors.transparent,
               focusColor: Colors.transparent,
@@ -131,7 +128,7 @@ class _SicialWidgetState extends State<SicialWidget> {
               child: wrapWithModel(
                 model: _model.fggModel,
                 updateCallback: () => safeSetState(() {}),
-                child: FggWidget(),
+                child: const FggWidget(),
               ),
             ),
           ),

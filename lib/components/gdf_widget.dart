@@ -1,8 +1,5 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'gdf_model.dart';
 export 'gdf_model.dart';
 
@@ -45,7 +42,7 @@ class _GdfWidgetState extends State<GdfWidget> {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20.0),
       child: Image.network(
-        widget!.efe!,
+        widget.efe!,
         width: 129.0,
         height: 200.0,
         fit: BoxFit.cover,

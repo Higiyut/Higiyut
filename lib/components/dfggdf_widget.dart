@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'dfggdf_model.dart';
 export 'dfggdf_model.dart';
 
@@ -44,7 +40,7 @@ class _DfggdfWidgetState extends State<DfggdfWidget>
             curve: Curves.easeInOutQuint,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            color: Color(0xD1FFFFFF),
+            color: const Color(0xD1FFFFFF),
             angle: 0.524,
           ),
         ],
@@ -56,7 +52,7 @@ class _DfggdfWidgetState extends State<DfggdfWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            color: Color(0x8AFFFFFF),
+            color: const Color(0x8AFFFFFF),
             angle: 0.524,
           ),
         ],
@@ -68,7 +64,7 @@ class _DfggdfWidgetState extends State<DfggdfWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            color: Color(0x80FFFFFF),
+            color: const Color(0x80FFFFFF),
             angle: 0.524,
           ),
         ],
@@ -95,7 +91,7 @@ class _DfggdfWidgetState extends State<DfggdfWidget>
           ),
         ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation1']!),
         Align(
-          alignment: AlignmentDirectional(0.91, -0.94),
+          alignment: const AlignmentDirectional(0.91, -0.94),
           child: Container(
             width: 44.0,
             height: 44.0,
@@ -106,7 +102,7 @@ class _DfggdfWidgetState extends State<DfggdfWidget>
           ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation2']!),
         ),
         Align(
-          alignment: AlignmentDirectional(0.9, 0.09),
+          alignment: const AlignmentDirectional(0.9, 0.09),
           child: Icon(
             Icons.favorite_rounded,
             color: FlutterFlowTheme.of(context).primaryBackground,

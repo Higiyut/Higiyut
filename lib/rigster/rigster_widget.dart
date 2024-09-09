@@ -3,9 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:provider/provider.dart';
 import 'rigster_model.dart';
 export 'rigster_model.dart';
 
@@ -47,19 +45,19 @@ class _RigsterWidgetState extends State<RigsterWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFF05050F),
+      backgroundColor: const Color(0xFF05050F),
       body: Column(
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 44.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 44.0),
             child: Stack(
               children: [
                 Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-0.03, 0.0),
+                      alignment: const AlignmentDirectional(-0.03, 0.0),
                       child: Lottie.asset(
                         'assets/lottie_animations/Animation_-_1725744908817.json',
                         width: 200.0,
@@ -69,9 +67,9 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             32.0, 0.0, 32.0, 0.0),
                         child: SingleChildScrollView(
                           child: Column(
@@ -80,7 +78,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     44.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'درووسکردنی هەژمار',
@@ -88,7 +86,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                       .displaySmall
                                       .override(
                                         fontFamily: 'elyas',
-                                        color: Color(0xFFF0F0F0),
+                                        color: const Color(0xFFF0F0F0),
                                         fontSize: 23.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -97,7 +95,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 24.0),
                                 child: Text(
                                   'تکایە زانیاریەکان بەدرووسی پربکەوە بۆئەوەی لەداهاتوو تووشی کێشە نەبیتەوە',
@@ -112,9 +110,9 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 370.0,
                                   child: TextFormField(
                                     controller: _model.emailTextController,
@@ -127,7 +125,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                           .labelLarge
                                           .override(
                                             fontFamily: 'elyas',
-                                            color: Color(0xFFFFFCF9),
+                                            color: const Color(0xFFFFFCF9),
                                             letterSpacing: 0.0,
                                             useGoogleFonts: false,
                                           ),
@@ -139,7 +137,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             useGoogleFonts: false,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00505067),
                                           width: 2.0,
                                         ),
@@ -147,7 +145,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFB09F9F),
                                           width: 2.0,
                                         ),
@@ -155,7 +153,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFE50A0A),
                                           width: 2.0,
                                         ),
@@ -163,7 +161,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFE50A0A),
                                           width: 2.0,
                                         ),
@@ -171,7 +169,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0x740F0F20),
+                                      fillColor: const Color(0x740F0F20),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyLarge
@@ -182,7 +180,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                           useGoogleFonts: false,
                                         ),
                                     keyboardType: TextInputType.emailAddress,
-                                    cursorColor: Color(0xFFE39494),
+                                    cursorColor: const Color(0xFFE39494),
                                     validator: _model
                                         .emailTextControllerValidator
                                         .asValidator(context),
@@ -190,9 +188,9 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 370.0,
                                   child: TextFormField(
                                     controller: _model.passwordTextController,
@@ -205,7 +203,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                           .labelLarge
                                           .override(
                                             fontFamily: 'elyas',
-                                            color: Color(0xFFF4F2F0),
+                                            color: const Color(0xFFF4F2F0),
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                             useGoogleFonts: false,
@@ -218,7 +216,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             useGoogleFonts: false,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00F9820B),
                                           width: 2.0,
                                         ),
@@ -226,7 +224,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFB09F9F),
                                           width: 2.0,
                                         ),
@@ -234,7 +232,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -242,7 +240,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -250,7 +248,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0x740F0F20),
+                                      fillColor: const Color(0x740F0F20),
                                       suffixIcon: InkWell(
                                         onTap: () => safeSetState(
                                           () => _model.passwordVisibility1 =
@@ -281,9 +279,9 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 370.0,
                                   child: TextFormField(
                                     controller:
@@ -301,7 +299,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                           .labelLarge
                                           .override(
                                             fontFamily: 'elyas',
-                                            color: Color(0xFFFDFDFC),
+                                            color: const Color(0xFFFDFDFC),
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                             useGoogleFonts: false,
@@ -314,7 +312,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             useGoogleFonts: false,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00FF8E00),
                                           width: 2.0,
                                         ),
@@ -322,7 +320,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFB09F9F),
                                           width: 2.0,
                                         ),
@@ -330,7 +328,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -338,7 +336,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -346,7 +344,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0x740F0F20),
+                                      fillColor: const Color(0x740F0F20),
                                       suffixIcon: InkWell(
                                         onTap: () => safeSetState(
                                           () => _model.passwordVisibility2 =
@@ -378,7 +376,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
@@ -388,7 +386,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             .text) {
                                       ScaffoldMessenger.of(context)
                                           .showSnackBar(
-                                        SnackBar(
+                                        const SnackBar(
                                           content: Text(
                                             'Passwords don\'t match!',
                                           ),
@@ -417,11 +415,11 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                   options: FFButtonOptions(
                                     width: 370.0,
                                     height: 44.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    color: Color(0xFFDD9D0B),
+                                    color: const Color(0xFFDD9D0B),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -436,24 +434,24 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 24.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 370.0,
                                   child: Stack(
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 12.0, 0.0, 12.0),
                                           child: Container(
                                             width: double.infinity,
                                             height: 2.0,
                                             decoration: BoxDecoration(
-                                              color: Color(0x0514181B),
+                                              color: const Color(0x0514181B),
                                               border: Border.all(
                                                 color: Colors.transparent,
                                               ),
@@ -463,18 +461,18 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Container(
                                           width: 70.0,
                                           height: 32.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0x000C141A),
+                                            color: const Color(0x000C141A),
                                             border: Border.all(
                                               color: Colors.transparent,
                                             ),
                                           ),
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Text(
                                             'یان',
                                             style: FlutterFlowTheme.of(context)
@@ -497,7 +495,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         4.0, 4.0, 6.0, 4.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -508,7 +506,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                         context.pushNamed(
                                           'HomePage',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType: PageTransitionType
                                                   .rightToLeft,
@@ -522,7 +520,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'elyas',
-                                              color: Color(0xFFE79036),
+                                              color: const Color(0xFFE79036),
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
                                               useGoogleFonts: false,
@@ -531,7 +529,7 @@ class _RigsterWidgetState extends State<RigsterWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 4.0),
                                     child: Text(
                                       'ئایە هەژمارت هەیە',

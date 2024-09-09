@@ -1,10 +1,7 @@
 import '/components/fggfgreg_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'fdg_model.dart';
 export 'fdg_model.dart';
 
@@ -48,7 +45,7 @@ class _FdgWidgetState extends State<FdgWidget> {
               wrapWithModel(
                 model: _model.fggfgregModel,
                 updateCallback: () => safeSetState(() {}),
-                child: FggfgregWidget(),
+                child: const FggfgregWidget(),
               ),
             ],
           ),

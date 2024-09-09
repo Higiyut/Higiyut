@@ -6,13 +6,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'page_model.dart';
 export 'page_model.dart';
@@ -45,7 +41,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            color: Color(0x80FFFFFF),
+            color: const Color(0x80FFFFFF),
             angle: 0.524,
           ),
         ],
@@ -72,7 +68,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
 
     return Scaffold(
       key: scaffoldKey,
-      backgroundColor: Color(0xFF1F1F1F),
+      backgroundColor: const Color(0xFF1F1F1F),
       body: Stack(
         children: [
           Stack(
@@ -87,7 +83,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           width: double.infinity,
                           height: 439.0,
                           decoration: BoxDecoration(
-                            color: Color(0x00FFFFFF),
+                            color: const Color(0x00FFFFFF),
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: ClipRRect(
@@ -104,7 +100,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           width: double.infinity,
                           height: 440.0,
                           decoration: BoxDecoration(
-                            gradient: LinearGradient(
+                            gradient: const LinearGradient(
                               colors: [Color(0x001F1F1F), Color(0xFF1F1F1F)],
                               stops: [0.0, 1.0],
                               begin: AlignmentDirectional(0.0, -1.0),
@@ -114,7 +110,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               38.0, 488.0, 38.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -124,7 +120,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                 width: 141.0,
                                 height: 42.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFF6BC00),
+                                  color: const Color(0xFFF6BC00),
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),
                                 child: InkWell(
@@ -141,13 +137,13 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Icon(
+                                      const Icon(
                                         Icons.play_arrow_rounded,
                                         color: Colors.white,
                                         size: 38.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 22.0, 5.0),
                                         child: AutoSizeText(
                                           'بینین',
@@ -155,7 +151,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'elyas',
-                                                color: Color(0xFFEBEFF2),
+                                                color: const Color(0xFFEBEFF2),
                                                 fontSize: 24.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.w500,
@@ -173,7 +169,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(6.0),
                                   border: Border.all(
-                                    color: Color(0xFFFFF500),
+                                    color: const Color(0xFFFFF500),
                                   ),
                                 ),
                                 child: Row(
@@ -188,7 +184,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   8.0, 0.0, 0.0, 5.0),
                                           child: ToggleIcon(
                                             onPressed: () async {
@@ -204,12 +200,12 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                             value: FFAppState()
                                                 .fgdf
                                                 .contains(currentUserReference),
-                                            onIcon: Icon(
+                                            onIcon: const Icon(
                                               Icons.bookmark_added,
                                               color: Color(0xFFF88708),
                                               size: 25.0,
                                             ),
-                                            offIcon: Icon(
+                                            offIcon: const Icon(
                                               Icons.bookmark_border,
                                               color: Color(0xFFFD7208),
                                               size: 25.0,
@@ -222,7 +218,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 3.0, 0.0, 0.0),
                                           child: AutoSizeText(
                                             'دڵخواز',
@@ -230,7 +226,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'elyas',
-                                                  color: Color(0xFFF2F2F1),
+                                                  color: const Color(0xFFF2F2F1),
                                                   fontSize: 24.0,
                                                   letterSpacing: 0.0,
                                                   fontWeight: FontWeight.w500,
@@ -247,19 +243,19 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               66.0, 450.0, 66.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 4.0, 0.0),
                                 child: Container(
                                   width: 4.0,
                                   height: 4.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFFD6500),
                                     shape: BoxShape.circle,
                                   ),
@@ -271,19 +267,19 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'elyas',
-                                      color: Color(0xFFFCFEFF),
+                                      color: const Color(0xFFFCFEFF),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                       useGoogleFonts: false,
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     4.0, 0.0, 4.0, 0.0),
                                 child: Container(
                                   width: 4.0,
                                   height: 4.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFFD6500),
                                     shape: BoxShape.circle,
                                   ),
@@ -295,19 +291,19 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'elyas',
-                                      color: Color(0xFFEFF3F6),
+                                      color: const Color(0xFFEFF3F6),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                       useGoogleFonts: false,
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     4.0, 0.0, 4.0, 0.0),
                                 child: Container(
                                   width: 4.0,
                                   height: 4.0,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Color(0xFFFD6500),
                                     shape: BoxShape.circle,
                                   ),
@@ -319,7 +315,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'elyas',
-                                      color: Color(0xFFFAFBFB),
+                                      color: const Color(0xFFFAFBFB),
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
                                       useGoogleFonts: false,
@@ -329,7 +325,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 388.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -351,7 +347,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               9.0, 0.0, 0.0, 0.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(6.0),
@@ -367,12 +363,12 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 12.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -384,7 +380,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'elyas',
-                                        color: Color(0xFFE6E8EA),
+                                        color: const Color(0xFFE6E8EA),
                                         fontSize: 22.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -399,12 +395,12 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         height: 196.0,
                         decoration: BoxDecoration(
-                          color: Color(0x00FFFFFF),
+                          color: const Color(0x00FFFFFF),
                           border: Border.all(
                             color: Colors.transparent,
                           ),
@@ -414,60 +410,60 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                           scrollDirection: Axis.horizontal,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 12.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.gdfModel1,
                                 updateCallback: () => safeSetState(() {}),
-                                child: GdfWidget(
+                                child: const GdfWidget(
                                   efe:
                                       'https://firebasestorage.googleapis.com/v0/b/for-anime-play-p08jjv.appspot.com/o/photo_2024-03-07_12-28-54.jpg?alt=media&token=61e107c4-339c-47e6-b957-0655bc130889',
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 12.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.gdfModel2,
                                 updateCallback: () => safeSetState(() {}),
-                                child: GdfWidget(
+                                child: const GdfWidget(
                                   efe:
                                       'https://firebasestorage.googleapis.com/v0/b/for-anime-play-p08jjv.appspot.com/o/photo_2024-03-07_11-18-27%20(2).jpg?alt=media&token=54a69b98-e61d-4550-95bf-922c1a6da552',
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 12.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.gdfModel3,
                                 updateCallback: () => safeSetState(() {}),
-                                child: GdfWidget(
+                                child: const GdfWidget(
                                   efe:
                                       'https://firebasestorage.googleapis.com/v0/b/for-anime-play-p08jjv.appspot.com/o/photo_2024-03-07_11-25-46.jpg?alt=media&token=80132d4b-a5d5-4456-a723-4ad84791bb17',
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 12.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.gdfModel4,
                                 updateCallback: () => safeSetState(() {}),
-                                child: GdfWidget(
+                                child: const GdfWidget(
                                   efe:
                                       'https://firebasestorage.googleapis.com/v0/b/for-anime-play-p08jjv.appspot.com/o/photo_2024-03-07_11-25-48%20(2).jpg?alt=media&token=cbb24696-7544-4aa2-a547-8321742403dd',
                                 ),
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 12.0, 0.0),
                               child: wrapWithModel(
                                 model: _model.gdfModel5,
                                 updateCallback: () => safeSetState(() {}),
-                                child: GdfWidget(
+                                child: const GdfWidget(
                                   efe:
                                       'https://firebasestorage.googleapis.com/v0/b/for-anime-play-p08jjv.appspot.com/o/photo_2024-03-07_11-25-50.jpg?alt=media&token=aa2cd743-58c2-4ee6-a905-d79ae849d8f8',
                                 ),
@@ -479,7 +475,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -487,7 +483,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                             child: wrapWithModel(
                               model: _model.sdcasModel,
                               updateCallback: () => safeSetState(() {}),
-                              child: SdcasWidget(),
+                              child: const SdcasWidget(),
                             ),
                           ),
                         ],
@@ -495,7 +491,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 12.0, 0.0, 0.0),
                       child: SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
@@ -511,7 +507,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(16.0),
@@ -524,7 +520,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(16.0),
@@ -537,7 +533,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(16.0),
@@ -553,7 +549,7 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
                         ),
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding:
                           EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
                       child: Row(
@@ -566,20 +562,20 @@ class _PageWidgetState extends State<PageWidget> with TickerProviderStateMixin {
               ),
             ],
           ),
-          Align(
+          const Align(
             alignment: AlignmentDirectional(0.0, 0.0),
             child: Stack(
               children: [],
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0.0, 1.0),
+            alignment: const AlignmentDirectional(0.0, 1.0),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 22.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 22.0),
               child: wrapWithModel(
                 model: _model.dsfsModel,
                 updateCallback: () => safeSetState(() {}),
-                child: DsfsWidget(),
+                child: const DsfsWidget(),
               ),
             ),
           ),

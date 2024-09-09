@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'fggfgreg_model.dart';
 export 'fggfgreg_model.dart';
 
@@ -44,17 +42,17 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
         Container(
           width: double.infinity,
           height: 441.0,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color(0x00FFFFFF),
             shape: BoxShape.rectangle,
           ),
-          child: Container(
+          child: SizedBox(
             width: double.infinity,
             height: 514.0,
             child: Stack(
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
                   child: PageView(
                     controller: _model.pageViewController ??=
                         PageController(initialPage: 0),
@@ -75,9 +73,9 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 222.0, 0.0, 0.0),
                                   child: Container(
                                     width: 117.0,
@@ -102,7 +100,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 22.0, 26.0, 0.0),
                                 child: Row(
@@ -112,7 +110,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     22.0, 12.0, 0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
@@ -143,9 +141,9 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 222.0, 0.0, 0.0),
                                   child: Container(
                                     width: 117.0,
@@ -170,7 +168,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 22.0, 26.0, 0.0),
                                 child: Row(
@@ -180,7 +178,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     22.0, 12.0, 0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
@@ -211,9 +209,9 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 222.0, 0.0, 0.0),
                                   child: Container(
                                     width: 117.0,
@@ -238,7 +236,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 22.0, 26.0, 0.0),
                                 child: Row(
@@ -248,7 +246,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     22.0, 12.0, 0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
@@ -279,9 +277,9 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 222.0, 0.0, 0.0),
                                   child: Container(
                                     width: 117.0,
@@ -306,7 +304,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                   ),
                                 ),
                               ),
-                              Padding(
+                              const Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
                                     0.0, 22.0, 26.0, 0.0),
                                 child: Row(
@@ -316,7 +314,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     22.0, 12.0, 0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
@@ -336,10 +334,10 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(0.0, 1.0),
+                  alignment: const AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                     child: smooth_page_indicator.SmoothPageIndicator(
                       controller: _model.pageViewController ??=
                           PageController(initialPage: 0),
@@ -348,7 +346,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                       onDotClicked: (i) async {
                         await _model.pageViewController!.animateToPage(
                           i,
-                          duration: Duration(milliseconds: 500),
+                          duration: const Duration(milliseconds: 500),
                           curve: Curves.ease,
                         );
                         safeSetState(() {});
@@ -358,7 +356,7 @@ class _FggfgregWidgetState extends State<FggfgregWidget> {
                         radius: 8.0,
                         dotWidth: 8.0,
                         dotHeight: 8.0,
-                        dotColor: Color(0xFFE8F900),
+                        dotColor: const Color(0xFFE8F900),
                         activeDotColor:
                             FlutterFlowTheme.of(context).primaryText,
                         paintStyle: PaintingStyle.stroke,

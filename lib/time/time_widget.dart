@@ -3,10 +3,7 @@ import '/backend/schema/structs/index.dart';
 import '/components/time12_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'time_model.dart';
 export 'time_model.dart';
 
@@ -43,7 +40,7 @@ class _TimeWidgetState extends State<TimeWidget> {
       body: Stack(
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
             child: FutureBuilder<ApiCallResponse>(
               future: TimeCall.call(),
               builder: (context, snapshot) {
@@ -70,7 +67,7 @@ class _TimeWidgetState extends State<TimeWidget> {
                                 .map<Time2Struct?>(Time2Struct.maybeFromMap)
                                 .toList() as Iterable<Time2Struct?>)
                             .withoutNulls
-                            ?.toList() ??
+                            .toList() ??
                         [];
 
                     return SingleChildScrollView(
@@ -93,7 +90,7 @@ class _TimeWidgetState extends State<TimeWidget> {
               },
             ),
           ),
-          Stack(
+          const Stack(
             children: [
               Align(
                 alignment: AlignmentDirectional(-1.0, -0.96),

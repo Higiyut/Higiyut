@@ -1,14 +1,10 @@
 import '/backend/api_requests/api_calls.dart';
-import '/backend/schema/structs/index.dart';
 import '/components/dfggdf_widget.dart';
 import '/components/dfsd_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
-import 'package:provider/provider.dart';
 import 'video_model.dart';
 export 'video_model.dart';
 
@@ -48,7 +44,7 @@ class _VideoWidgetState extends State<VideoWidget> {
           mainAxisSize: MainAxisSize.max,
           children: [
             Expanded(
-              child: Container(
+              child: SizedBox(
                 width: double.infinity,
                 height: 500.0,
                 child: PagedPageView<ApiPagingParams, dynamic>(
@@ -65,11 +61,11 @@ class _VideoWidgetState extends State<VideoWidget> {
                   scrollDirection: Axis.vertical,
                   builderDelegate: PagedChildBuilderDelegate<dynamic>(
                     // Customize what your widget looks like when it's loading the first page.
-                    firstPageProgressIndicatorBuilder: (_) => Center(
+                    firstPageProgressIndicatorBuilder: (_) => const Center(
                       child: DfggdfWidget(),
                     ),
                     // Customize what your widget looks like when it's loading another page.
-                    newPageProgressIndicatorBuilder: (_) => Center(
+                    newPageProgressIndicatorBuilder: (_) => const Center(
                       child: DfggdfWidget(),
                     ),
 

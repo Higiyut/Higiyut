@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'time12_model.dart';
 export 'time12_model.dart';
 
@@ -49,7 +47,7 @@ class _Time12WidgetState extends State<Time12Widget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(0.0, 55.0, 0.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 55.0, 0.0, 0.0),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +56,7 @@ class _Time12WidgetState extends State<Time12Widget> {
             width: 336.0,
             height: 197.0,
             decoration: BoxDecoration(
-              color: Color(0xABF9B900),
+              color: const Color(0xABF9B900),
               borderRadius: BorderRadius.circular(14.0),
             ),
             child: Stack(
@@ -66,14 +64,14 @@ class _Time12WidgetState extends State<Time12Widget> {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.network(
-                    widget!.image!,
+                    widget.image!,
                     width: 337.0,
                     height: 200.0,
                     fit: BoxFit.cover,
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(3.0, 3.0, 12.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(3.0, 3.0, 12.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -93,17 +91,17 @@ class _Time12WidgetState extends State<Time12Widget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 134.0, 12.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 134.0, 12.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Text(
                           valueOrDefault<String>(
-                            widget!.title,
+                            widget.title,
                             'title',
                           ),
                           style:
@@ -118,14 +116,14 @@ class _Time12WidgetState extends State<Time12Widget> {
                         width: 74.0,
                         height: 39.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD0DD1C),
+                          color: const Color(0xFFD0DD1C),
                           borderRadius: BorderRadius.circular(24.0),
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             valueOrDefault<String>(
-                              widget!.date,
+                              widget.date,
                               'date',
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -142,11 +140,11 @@ class _Time12WidgetState extends State<Time12Widget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(1.0, -1.0),
+                  alignment: const AlignmentDirectional(1.0, -1.0),
                   child: Container(
                     width: 93.0,
                     height: 30.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFF0D0404),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(55.0),
@@ -156,13 +154,13 @@ class _Time12WidgetState extends State<Time12Widget> {
                       ),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, -1.0),
+                      alignment: const AlignmentDirectional(0.0, -1.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 2.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 2.0, 0.0),
                         child: Text(
                           valueOrDefault<String>(
-                            widget!.number,
+                            widget.number,
                             'number',
                           ),
                           style:

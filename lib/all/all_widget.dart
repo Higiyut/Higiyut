@@ -1,10 +1,7 @@
 import '/components/dffd_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'all_model.dart';
 export 'all_model.dart';
 
@@ -46,12 +43,12 @@ class _AllWidgetState extends State<AllWidget> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(2.0, 12.0, 2.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(2.0, 12.0, 2.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -64,7 +61,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -77,7 +74,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -93,12 +90,12 @@ class _AllWidgetState extends State<AllWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -111,7 +108,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -124,7 +121,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -140,12 +137,12 @@ class _AllWidgetState extends State<AllWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -158,7 +155,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -171,7 +168,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -187,12 +184,12 @@ class _AllWidgetState extends State<AllWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -205,7 +202,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -218,7 +215,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -234,12 +231,12 @@ class _AllWidgetState extends State<AllWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -252,7 +249,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -265,7 +262,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -281,12 +278,12 @@ class _AllWidgetState extends State<AllWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(2.0, 0.0, 2.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -299,7 +296,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -312,7 +309,7 @@ class _AllWidgetState extends State<AllWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             12.0, 22.0, 0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
@@ -330,17 +327,17 @@ class _AllWidgetState extends State<AllWidget> {
               ],
             ),
           ),
-          Stack(
+          const Stack(
             children: [],
           ),
           Align(
-            alignment: AlignmentDirectional(0.0, 1.0),
+            alignment: const AlignmentDirectional(0.0, 1.0),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 22.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 22.0),
               child: wrapWithModel(
                 model: _model.dffdModel,
                 updateCallback: () => safeSetState(() {}),
-                child: DffdWidget(),
+                child: const DffdWidget(),
               ),
             ),
           ),

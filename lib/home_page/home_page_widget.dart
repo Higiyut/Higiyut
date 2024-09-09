@@ -1,12 +1,9 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/flutter_flow/flutter_flow_rive_controller.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:rive/rive.dart' hide LinearGradient;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -47,14 +44,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFF05050F),
+        backgroundColor: const Color(0xFF05050F),
         body: SafeArea(
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -63,7 +60,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       Container(
                         width: double.infinity,
                         height: 140.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(16.0),
                             bottomRight: Radius.circular(16.0),
@@ -71,10 +68,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             topRight: Radius.circular(0.0),
                           ),
                         ),
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Stack(
                           children: [
-                            Container(
+                            SizedBox(
                               width: 200.0,
                               height: 259.0,
                               child: RiveAnimation.asset(
@@ -88,16 +85,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               32.0, 32.0, 32.0, 32.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     160.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'بەخێربێیتەوە',
@@ -105,7 +102,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .titleMedium
                                       .override(
                                         fontFamily: 'elyas',
-                                        color: Color(0xFFF9F8F7),
+                                        color: const Color(0xFFF9F8F7),
                                         fontSize: 27.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -114,7 +111,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 24.0),
                                 child: Text(
                                   'تکایە زانیاریەکان بەدرووسی پربکەوە بۆئەوەی لەداهاتوو تووشی کێشە نەبیتەوە',
@@ -122,7 +119,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       .labelMedium
                                       .override(
                                         fontFamily: 'elyas',
-                                        color: Color(0xFF677681),
+                                        color: const Color(0xFF677681),
                                         fontSize: 14.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -131,9 +128,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 370.0,
                                   child: TextFormField(
                                     controller: _model.emailTextController,
@@ -146,7 +143,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           .labelMedium
                                           .override(
                                             fontFamily: 'elyas',
-                                            color: Color(0xFF677681),
+                                            color: const Color(0xFF677681),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -156,13 +153,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           .bodyLarge
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: Color(0xFF14181B),
+                                            color: const Color(0xFF14181B),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.normal,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00F2670B),
                                           width: 2.0,
                                         ),
@@ -170,7 +167,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFB09F9F),
                                           width: 2.0,
                                         ),
@@ -178,7 +175,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -186,7 +183,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -194,13 +191,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0x740F0F20),
+                                      fillColor: const Color(0x740F0F20),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'elyas',
-                                          color: Color(0xFFF2F5F8),
+                                          color: const Color(0xFFF2F5F8),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
@@ -214,9 +211,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 370.0,
                                   child: TextFormField(
                                     controller: _model.passwordTextController,
@@ -229,7 +226,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           .labelMedium
                                           .override(
                                             fontFamily: 'elyas',
-                                            color: Color(0xFF677681),
+                                            color: const Color(0xFF677681),
                                             fontSize: 14.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
@@ -239,13 +236,13 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           .bodyLarge
                                           .override(
                                             fontFamily: 'Inter',
-                                            color: Color(0xFF14181B),
+                                            color: const Color(0xFF14181B),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.w500,
                                           ),
                                       enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00EC7D0E),
                                           width: 2.0,
                                         ),
@@ -253,7 +250,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0xFFB09F9F),
                                           width: 2.0,
                                         ),
@@ -261,7 +258,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       errorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -269,7 +266,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       focusedErrorBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 2.0,
                                         ),
@@ -277,7 +274,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             BorderRadius.circular(12.0),
                                       ),
                                       filled: true,
-                                      fillColor: Color(0x740F0F20),
+                                      fillColor: const Color(0x740F0F20),
                                       suffixIcon: InkWell(
                                         onTap: () => safeSetState(
                                           () => _model.passwordVisibility =
@@ -289,7 +286,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           _model.passwordVisibility
                                               ? Icons.visibility_outlined
                                               : Icons.visibility_off_outlined,
-                                          color: Color(0xFF677681),
+                                          color: const Color(0xFF677681),
                                           size: 22.0,
                                         ),
                                       ),
@@ -298,7 +295,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         .bodyMedium
                                         .override(
                                           fontFamily: 'Inter',
-                                          color: Color(0xFFF6F8F9),
+                                          color: const Color(0xFFF6F8F9),
                                           fontSize: 14.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.normal,
@@ -310,7 +307,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 16.0),
                                 child: FFButtonWidget(
                                   onPressed: () async {
@@ -330,7 +327,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       'whats',
                                       context.mounted,
                                       extra: <String, dynamic>{
-                                        kTransitionInfoKey: TransitionInfo(
+                                        kTransitionInfoKey: const TransitionInfo(
                                           hasTransition: true,
                                           transitionType:
                                               PageTransitionType.scale,
@@ -343,9 +340,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   options: FFButtonOptions(
                                     width: 370.0,
                                     height: 44.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 0.0),
                                     color: FlutterFlowTheme.of(context)
                                         .primaryBackground,
@@ -369,7 +366,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 8.0, 4.0),
                                     child: InkWell(
                                       splashColor: Colors.transparent,
@@ -380,7 +377,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         context.pushNamed(
                                           'rigster',
                                           extra: <String, dynamic>{
-                                            kTransitionInfoKey: TransitionInfo(
+                                            kTransitionInfoKey: const TransitionInfo(
                                               hasTransition: true,
                                               transitionType: PageTransitionType
                                                   .leftToRight,
@@ -394,7 +391,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             .bodyMedium
                                             .override(
                                               fontFamily: 'elyas',
-                                              color: Color(0xFFF83B46),
+                                              color: const Color(0xFFF83B46),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
@@ -404,7 +401,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 4.0),
                                     child: Text(
                                       'ئایەهەژمارت نیە؟',

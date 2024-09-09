@@ -1,8 +1,5 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'dsfs_model.dart';
 export 'dsfs_model.dart';
 
@@ -38,21 +35,21 @@ class _DsfsWidgetState extends State<DsfsWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(10.0, 23.0, 10.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(10.0, 23.0, 10.0, 0.0),
       child: Container(
         width: 319.0,
         height: 50.0,
         decoration: BoxDecoration(
-          color: Color(0xBC05050F),
+          color: const Color(0xBC05050F),
           borderRadius: BorderRadius.circular(24.0),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 9.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 9.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(
+              const Icon(
                 Icons.home_rounded,
                 color: Color(0xFFF59B05),
                 size: 24.0,
@@ -65,7 +62,7 @@ class _DsfsWidgetState extends State<DsfsWidget> {
                 onTap: () async {
                   context.pushNamed('sicial');
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.photo_filter_rounded,
                   color: Color(0xFFFAFBFD),
                   size: 24.0,
@@ -79,7 +76,7 @@ class _DsfsWidgetState extends State<DsfsWidget> {
                 onTap: () async {
                   context.pushNamed('all');
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.all_out,
                   color: Colors.white,
                   size: 24.0,
@@ -93,7 +90,7 @@ class _DsfsWidgetState extends State<DsfsWidget> {
                 onTap: () async {
                   context.pushNamed('favort');
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.bookmarks_rounded,
                   color: Color(0xFFF8F7F7),
                   size: 24.0,
@@ -107,7 +104,7 @@ class _DsfsWidgetState extends State<DsfsWidget> {
                 onTap: () async {
                   context.pushNamed('profil');
                 },
-                child: Icon(
+                child: const Icon(
                   Icons.face_6,
                   color: Color(0xFFF8F8F9),
                   size: 24.0,

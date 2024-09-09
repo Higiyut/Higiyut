@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'videoview_model.dart';
 export 'videoview_model.dart';
 
@@ -45,7 +42,7 @@ class _VideoviewWidgetState extends State<VideoviewWidget> {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Container(
+                const SizedBox(
                   width: double.infinity,
                   height: 400.0,
                   child: custom_widgets.CustomYouTubePlayer(
@@ -60,13 +57,13 @@ class _VideoviewWidgetState extends State<VideoviewWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(7.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(7.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 130.0,
                           height: 81.0,
@@ -86,7 +83,7 @@ class _VideoviewWidgetState extends State<VideoviewWidget> {
           Stack(
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 22.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 22.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -95,7 +92,7 @@ class _VideoviewWidgetState extends State<VideoviewWidget> {
                   onTap: () async {
                     context.safePop();
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.chevron_left_rounded,
                     color: Colors.white,
                     size: 44.0,

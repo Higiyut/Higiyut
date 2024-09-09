@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sdcas_model.dart';
 export 'sdcas_model.dart';
 
@@ -38,12 +36,12 @@ class _SdcasWidgetState extends State<SdcasWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
       child: Container(
         width: double.infinity,
         height: 393.0,
         decoration: BoxDecoration(
-          color: Color(0xFF101117),
+          color: const Color(0xFF101117),
           borderRadius: BorderRadius.circular(10.0),
           border: Border.all(
             color: FlutterFlowTheme.of(context).primaryBackground,
@@ -56,18 +54,18 @@ class _SdcasWidgetState extends State<SdcasWidget> {
               height: 200.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(8.0),
                   topRight: Radius.circular(8.0),
                 ),
                 border: Border.all(
-                  color: Color(0xFFFFF200),
+                  color: const Color(0xFFFFF200),
                 ),
               ),
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(0.0),
                   bottomRight: Radius.circular(0.0),
                   topLeft: Radius.circular(8.0),
@@ -84,7 +82,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
             Container(
               width: 393.0,
               height: 200.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [Color(0x00040A0D), Color(0xFF101117)],
                   stops: [0.0, 1.0],
@@ -100,8 +98,8 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                   width: 100.0,
                   height: 34.0,
                   decoration: BoxDecoration(
-                    color: Color(0xFF101117),
-                    borderRadius: BorderRadius.only(
+                    color: const Color(0xFF101117),
+                    borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
                       bottomRight: Radius.circular(55.0),
                       topLeft: Radius.circular(8.0),
@@ -112,10 +110,10 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                     ),
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, -1.0),
+                    alignment: const AlignmentDirectional(0.0, -1.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 4.0),
                       child: Text(
                         '٢٤ ئەلقە',
                         style:
@@ -134,9 +132,9 @@ class _SdcasWidgetState extends State<SdcasWidget> {
               ],
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.1),
+              alignment: const AlignmentDirectional(0.0, 0.1),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(11.0, 0.0, 12.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(11.0, 0.0, 12.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -154,7 +152,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.07, 0.29),
+              alignment: const AlignmentDirectional(0.07, 0.29),
               child: Text(
                 'باسی کوڕێک ئەکا بەهۆی نەفرینێکەوە فڕێ ئەدرێ و ئەیوەێ\nتۆڵە لەخێزانەکەی بکاتەوە',
                 textAlign: TextAlign.end,
@@ -167,9 +165,9 @@ class _SdcasWidgetState extends State<SdcasWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.0, 0.89),
+              alignment: const AlignmentDirectional(0.0, 0.89),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 4.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 4.0, 0.0),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -177,7 +175,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -206,14 +204,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.75, 0.64),
+                                  alignment: const AlignmentDirectional(0.75, 0.64),
                                   child: Text(
                                     'ئەلقەی ١',
                                     style: FlutterFlowTheme.of(context)
                                         .titleMedium
                                         .override(
                                           fontFamily: 'ttf2',
-                                          color: Color(0xFF060711),
+                                          color: const Color(0xFF060711),
                                           fontSize: 18.0,
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
@@ -228,7 +226,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -249,14 +247,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٢',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -270,7 +268,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -291,14 +289,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٣',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -312,7 +310,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -333,14 +331,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٤',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -354,7 +352,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -375,14 +373,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٥',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -396,7 +394,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -417,14 +415,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٦',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -438,7 +436,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -459,14 +457,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٧',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -480,7 +478,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -501,14 +499,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٨',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -522,7 +520,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -543,14 +541,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٩',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -564,7 +562,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -585,14 +583,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٠',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -606,7 +604,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -627,14 +625,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١١',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -648,7 +646,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -669,14 +667,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٢',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -690,7 +688,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -711,14 +709,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٣',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -732,7 +730,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -753,14 +751,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٤',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -774,7 +772,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -795,14 +793,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٥',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -816,7 +814,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -837,14 +835,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٦',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -858,7 +856,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -879,14 +877,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٧',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -900,7 +898,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -921,14 +919,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٨',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -942,7 +940,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -963,14 +961,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ١٩',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -984,7 +982,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -1005,14 +1003,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٢٠',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -1026,7 +1024,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -1047,14 +1045,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٢١',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -1068,7 +1066,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(9.0, 0.0, 0.0, 0.0),
                         child: Container(
                           width: 149.0,
                           height: 84.0,
@@ -1089,14 +1087,14 @@ class _SdcasWidgetState extends State<SdcasWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.75, 0.64),
+                                alignment: const AlignmentDirectional(0.75, 0.64),
                                 child: Text(
                                   'ئەلقەی ٢٢',
                                   style: FlutterFlowTheme.of(context)
                                       .titleMedium
                                       .override(
                                         fontFamily: 'ttf2',
-                                        color: Color(0xFF060711),
+                                        color: const Color(0xFF060711),
                                         fontSize: 18.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w500,
@@ -1114,7 +1112,7 @@ class _SdcasWidgetState extends State<SdcasWidget> {
               ),
             ),
             Align(
-              alignment: AlignmentDirectional(0.92, -0.9),
+              alignment: const AlignmentDirectional(0.92, -0.9),
               child: Text(
                 'دۆرۆرۆ',
                 style: FlutterFlowTheme.of(context).titleMedium.override(

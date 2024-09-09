@@ -1,11 +1,8 @@
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'package:provider/provider.dart';
 import 'profil_model.dart';
 export 'profil_model.dart';
 
@@ -44,7 +41,7 @@ class _ProfilWidgetState extends State<ProfilWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: Color(0xFF1F1F1F),
+            backgroundColor: const Color(0xFF1F1F1F),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -70,7 +67,7 @@ class _ProfilWidgetState extends State<ProfilWidget> {
           onTap: () => FocusScope.of(context).unfocus(),
           child: Scaffold(
             key: scaffoldKey,
-            backgroundColor: Color(0xFF1F1F1F),
+            backgroundColor: const Color(0xFF1F1F1F),
             body: SingleChildScrollView(
               primary: false,
               child: Column(
@@ -78,12 +75,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               10.0, 0.0, 0.0, 0.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -93,7 +90,7 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                             onTap: () async {
                               context.safePop();
                             },
-                            child: Icon(
+                            child: const Icon(
                               Icons.chevron_left_rounded,
                               color: Colors.white,
                               size: 45.0,
@@ -117,15 +114,15 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                             animate: true,
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   31.0, 55.0, 0.0, 0.0),
                               child: Container(
                                 width: 90.0,
                                 height: 90.0,
                                 clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.asset(
@@ -143,7 +140,7 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                     width: 356.0,
                     height: 235.0,
                     decoration: BoxDecoration(
-                      color: Color(0x43312828),
+                      color: const Color(0x43312828),
                       borderRadius: BorderRadius.circular(10.0),
                     ),
                     child: Column(
@@ -152,19 +149,19 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 8.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     210.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
@@ -192,7 +189,7 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                       .primaryBackground,
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.date_range_outlined,
                                   color: Colors.white,
                                   size: 20.0,
@@ -206,12 +203,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 9.0, 0.0, 0.0),
                               child: Container(
                                 width: 333.0,
                                 height: 0.2,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x34FFFFFF),
                                 ),
                               ),
@@ -219,19 +216,19 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 8.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     180.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -255,10 +252,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                 width: 25.0,
                                 height: 25.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF00B3FF),
+                                  color: const Color(0xFF00B3FF),
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.timer_rounded,
                                   color: Colors.white,
                                   size: 20.0,
@@ -272,12 +269,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 9.0, 0.0, 0.0),
                               child: Container(
                                 width: 333.0,
                                 height: 0.2,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x34FFFFFF),
                                 ),
                               ),
@@ -285,19 +282,19 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 8.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     195.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -321,10 +318,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                 width: 25.0,
                                 height: 25.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF0050FF),
+                                  color: const Color(0xFF0050FF),
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.face,
                                   color: Colors.white,
                                   size: 20.0,
@@ -338,12 +335,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 9.0, 0.0, 0.0),
                               child: Container(
                                 width: 333.0,
                                 height: 0.2,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x34FFFFFF),
                                 ),
                               ),
@@ -351,19 +348,19 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 8.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     199.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -387,10 +384,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                 width: 25.0,
                                 height: 25.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFFF0026),
+                                  color: const Color(0xFFFF0026),
                                   borderRadius: BorderRadius.circular(6.0),
                                 ),
-                                child: Icon(
+                                child: const Icon(
                                   Icons.card_giftcard_rounded,
                                   color: Colors.white,
                                   size: 20.0,
@@ -404,12 +401,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 9.0, 0.0, 0.0),
                               child: Container(
                                 width: 333.0,
                                 height: 0.2,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x34FFFFFF),
                                 ),
                               ),
@@ -417,19 +414,19 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 8.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     152.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -450,15 +447,15 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Container(
                                   width: 25.0,
                                   height: 25.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFFF006F),
+                                    color: const Color(0xFFFF006F),
                                     borderRadius: BorderRadius.circular(6.0),
                                   ),
-                                  child: Align(
+                                  child: const Align(
                                     alignment: AlignmentDirectional(0.0, -1.0),
                                     child: Icon(
                                       Icons.warning_rounded,
@@ -475,31 +472,31 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 44.0, 0.0, 0.0),
                       child: Container(
                         width: 356.0,
                         height: 44.0,
                         decoration: BoxDecoration(
-                          color: Color(0x43312828),
+                          color: const Color(0x43312828),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 0.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     187.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -520,15 +517,15 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Container(
                                   width: 25.0,
                                   height: 25.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFFF00F9),
+                                    color: const Color(0xFFFF00F9),
                                     borderRadius: BorderRadius.circular(6.0),
                                   ),
-                                  child: Align(
+                                  child: const Align(
                                     alignment: AlignmentDirectional(0.0, -1.0),
                                     child: Icon(
                                       Icons.live_tv,
@@ -545,31 +542,31 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 22.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 22.0, 0.0, 0.0),
                       child: Container(
                         width: 356.0,
                         height: 44.0,
                         decoration: BoxDecoration(
-                          color: Color(0x43312828),
+                          color: const Color(0x43312828),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               6.0, 0.0, 10.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.chevron_left_rounded,
                                 color: Color(0x36FFFFFF),
                                 size: 22.0,
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     196.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -590,15 +587,15 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Container(
                                   width: 25.0,
                                   height: 25.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0xFFE2344E),
+                                    color: const Color(0xFFE2344E),
                                     borderRadius: BorderRadius.circular(6.0),
                                   ),
-                                  child: Align(
+                                  child: const Align(
                                     alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Icon(
                                       Icons.notifications_active,
@@ -616,12 +613,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 33.0, 0.0, 0.0),
                     child: Container(
                       width: 356.0,
                       height: 219.0,
                       decoration: BoxDecoration(
-                        color: Color(0x43312828),
+                        color: const Color(0x43312828),
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: SingleChildScrollView(
@@ -630,20 +627,20 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   6.0, 8.0, 10.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.chevron_left_rounded,
                                     color: Color(0x36FFFFFF),
                                     size: 22.0,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         200.0, 0.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -667,10 +664,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                     width: 25.0,
                                     height: 25.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFA36F2E),
+                                      color: const Color(0xFFA36F2E),
                                       borderRadius: BorderRadius.circular(6.0),
                                     ),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.library_books,
                                       color: Colors.white,
                                       size: 20.0,
@@ -684,12 +681,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 9.0, 0.0, 0.0),
                                   child: Container(
                                     width: 333.0,
                                     height: 0.2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x34FFFFFF),
                                     ),
                                   ),
@@ -697,20 +694,20 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   6.0, 8.0, 10.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.chevron_left_rounded,
                                     color: Color(0x36FFFFFF),
                                     size: 22.0,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         180.0, 0.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -734,10 +731,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                     width: 25.0,
                                     height: 25.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF00FFA7),
+                                      color: const Color(0xFF00FFA7),
                                       borderRadius: BorderRadius.circular(6.0),
                                     ),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.bookmarks_rounded,
                                       color: Colors.white,
                                       size: 20.0,
@@ -751,12 +748,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 9.0, 0.0, 0.0),
                                   child: Container(
                                     width: 333.0,
                                     height: 0.2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x34FFFFFF),
                                     ),
                                   ),
@@ -764,20 +761,20 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   6.0, 8.0, 10.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.chevron_left_rounded,
                                     color: Color(0x36FFFFFF),
                                     size: 22.0,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         169.0, 0.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -801,10 +798,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                     width: 25.0,
                                     height: 25.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFF53FF00),
+                                      color: const Color(0xFF53FF00),
                                       borderRadius: BorderRadius.circular(6.0),
                                     ),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.light_mode_sharp,
                                       color: Colors.white,
                                       size: 20.0,
@@ -818,12 +815,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 9.0, 0.0, 0.0),
                                   child: Container(
                                     width: 333.0,
                                     height: 0.2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x34FFFFFF),
                                     ),
                                   ),
@@ -831,20 +828,20 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   6.0, 8.0, 10.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.chevron_left_rounded,
                                     color: Color(0x36FFFFFF),
                                     size: 22.0,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         219.0, 0.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -868,10 +865,10 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                     width: 25.0,
                                     height: 25.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0xFFFF5C00),
+                                      color: const Color(0xFFFF5C00),
                                       borderRadius: BorderRadius.circular(6.0),
                                     ),
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.confirmation_num_sharp,
                                       color: Colors.white,
                                       size: 20.0,
@@ -885,12 +882,12 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 9.0, 0.0, 0.0),
                                   child: Container(
                                     width: 333.0,
                                     height: 0.2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x34FFFFFF),
                                     ),
                                   ),
@@ -898,20 +895,20 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   6.0, 8.0, 10.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Icon(
+                                  const Icon(
                                     Icons.chevron_left_rounded,
                                     color: Color(0x36FFFFFF),
                                     size: 22.0,
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         169.0, 0.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -932,16 +929,16 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Container(
                                       width: 25.0,
                                       height: 25.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFFFF006F),
+                                        color: const Color(0xFFFF006F),
                                         borderRadius:
                                             BorderRadius.circular(6.0),
                                       ),
-                                      child: Align(
+                                      child: const Align(
                                         alignment:
                                             AlignmentDirectional(0.0, -1.0),
                                         child: Icon(
@@ -966,7 +963,7 @@ class _ProfilWidgetState extends State<ProfilWidget> {
                       Container(
                         width: 368.0,
                         height: 47.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x00FFFFFF),
                         ),
                       ),

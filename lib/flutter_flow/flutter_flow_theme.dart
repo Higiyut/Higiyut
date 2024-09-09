@@ -122,7 +122,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
 
-  late Color customColor1 = Color(0xFFAB7195);
+  late Color customColor1 = const Color(0xFFAB7195);
 }
 
 abstract class Typography {

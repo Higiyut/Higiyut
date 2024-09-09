@@ -5,10 +5,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'whats_model.dart';
 export 'whats_model.dart';
 
@@ -55,14 +52,14 @@ class _WhatsWidgetState extends State<WhatsWidget> {
           'درووسکردنی پرۆفایل',
           style: FlutterFlowTheme.of(context).titleMedium.override(
                 fontFamily: 'elyas',
-                color: Color(0xFFFBF6F6),
+                color: const Color(0xFFFBF6F6),
                 letterSpacing: 0.0,
                 useGoogleFonts: false,
               ),
         ),
         actions: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 24.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 24.0, 0.0),
             child: Text(
               '2/2',
               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -80,13 +77,13 @@ class _WhatsWidgetState extends State<WhatsWidget> {
       body: SafeArea(
         top: true,
         child: Align(
-          alignment: AlignmentDirectional(0.0, -1.0),
+          alignment: const AlignmentDirectional(0.0, -1.0),
           child: Container(
             width: double.infinity,
-            constraints: BoxConstraints(
+            constraints: const BoxConstraints(
               maxWidth: 870.0,
             ),
-            decoration: BoxDecoration(),
+            decoration: const BoxDecoration(),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -102,14 +99,14 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                         tablet: false,
                       ))
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(0.0),
                                 bottomRight: Radius.circular(0.0),
                                 topLeft: Radius.circular(12.0),
@@ -117,7 +114,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,7 +129,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       'Fill out your profile now in order to complete setup of your profile.',
@@ -155,7 +152,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                         desktop: false,
                       ))
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: Text(
                             'ئەم پرۆفایلە بۆلایڤ و کۆمێنت و چات و نامە ناردی تایبەت بەکاردی بۆیە ئاگاداربە کەبەدرووستی زانیاریەکان پرکەیتەوە',
@@ -169,9 +166,9 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                           ),
                         ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 16.0, 0.0, 16.0),
                           child: InkWell(
                             splashColor: Colors.transparent,
@@ -249,7 +246,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                               width: 120.0,
                               height: 120.0,
                               decoration: BoxDecoration(
-                                color: Color(0xFFDBE2E7),
+                                color: const Color(0xFFDBE2E7),
                                 image: DecorationImage(
                                   fit: BoxFit.cover,
                                   image: Image.asset(
@@ -262,7 +259,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                                 width: 120.0,
                                 height: 120.0,
                                 clipBehavior: Clip.antiAlias,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                 ),
                                 child: Image.network(
@@ -274,7 +271,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 16.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -337,7 +334,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                                       topRight: Radius.circular(4.0),
                                     ),
                                   ),
-                                  contentPadding: EdgeInsets.all(16.0),
+                                  contentPadding: const EdgeInsets.all(16.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .titleMedium
@@ -357,14 +354,14 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 4.0, 24.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 0.0),
                                 child: TextFormField(
                                   controller: _model.userNameTextController,
@@ -424,7 +421,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                                       ),
                                     ),
                                     contentPadding:
-                                        EdgeInsetsDirectional.fromSTEB(
+                                        const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 24.0),
                                     prefixIcon: Icon(
                                       Icons.alternate_email_outlined,
@@ -449,7 +446,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsetsDirectional.fromSTEB(
                             24.0, 4.0, 24.0, 0.0),
                         child: Row(
@@ -461,13 +458,13 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 40.0),
                           child: FFButtonWidget(
                             onPressed: () async {
@@ -484,9 +481,9 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                             options: FFButtonOptions(
                               width: 230.0,
                               height: 50.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context)
                                   .primaryBackground,
@@ -498,7 +495,7 @@ class _WhatsWidgetState extends State<WhatsWidget> {
                                     useGoogleFonts: false,
                                   ),
                               elevation: 2.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Colors.transparent,
                                 width: 1.0,
                               ),

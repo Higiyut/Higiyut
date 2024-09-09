@@ -3,11 +3,8 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'dsfg_model.dart';
 export 'dsfg_model.dart';
@@ -53,15 +50,15 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
             curve: Curves.elasticOut,
             delay: 0.0.ms,
             duration: 750.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
           ScaleEffect(
             curve: Curves.easeOut,
             delay: 0.0.ms,
             duration: 750.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -93,17 +90,17 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 9.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 9.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 9.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 9.0, 0.0, 0.0),
                         child: Text(
                           valueOrDefault<String>(
-                            widget!.name,
+                            widget.name,
                             'name',
                           ),
                           maxLines: 20,
@@ -120,17 +117,17 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 448.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x00F7FAFB),
                     ),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(0.0),
                       child: Image.network(
-                        widget!.avatar!,
+                        widget.avatar!,
                         width: 300.0,
                         height: 232.0,
                         fit: BoxFit.cover,
@@ -142,10 +139,10 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: AlignmentDirectional(-0.91, 0.16),
+                      alignment: const AlignmentDirectional(-0.91, 0.16),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 11.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 11.0, 0.0, 0.0),
                         child: ToggleIcon(
                           onPressed: () async {
                             safeSetState(
@@ -167,12 +164,12 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
                           },
                           value:
                               FFAppState().fgdf.contains(currentUserReference),
-                          onIcon: Icon(
+                          onIcon: const Icon(
                             Icons.favorite_rounded,
                             color: Color(0xFFEE8D09),
                             size: 25.0,
                           ),
-                          offIcon: Icon(
+                          offIcon: const Icon(
                             Icons.favorite_border_rounded,
                             color: Colors.white,
                             size: 33.0,
@@ -185,17 +182,17 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(10.0, 500.0, 20.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 500.0, 20.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                     child: Text(
                       valueOrDefault<String>(
-                        widget!.title,
+                        widget.title,
                         'title',
                       ),
                       maxLines: 300,
@@ -211,11 +208,11 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
               child: Container(
                 width: 40.0,
                 height: 40.0,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0x0014181B),
                   shape: BoxShape.circle,
                 ),
@@ -231,12 +228,12 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
               ),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(67.0, 7.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(67.0, 7.0, 0.0, 0.0),
               child: Text(
                 '4AnimePlay',
                 style: FlutterFlowTheme.of(context).titleMedium.override(
                       fontFamily: 'elyas',
-                      color: Color(0xFFF7F4EE),
+                      color: const Color(0xFFF7F4EE),
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w500,
                       useGoogleFonts: false,
@@ -247,13 +244,13 @@ class _DsfgWidgetState extends State<DsfgWidget> with TickerProviderStateMixin {
         ),
         Stack(
           children: [
-            if ((currentUserDocument?.like?.toList() ?? [])
+            if ((currentUserDocument?.like.toList() ?? [])
                     .contains(currentUserReference) ==
                 true)
               Align(
-                alignment: AlignmentDirectional(-0.01, 0.48),
+                alignment: const AlignmentDirectional(-0.01, 0.48),
                 child: AuthUserStreamWidget(
-                  builder: (context) => Icon(
+                  builder: (context) => const Icon(
                     Icons.favorite_rounded,
                     color: Color(0xFFEC9205),
                     size: 88.0,
