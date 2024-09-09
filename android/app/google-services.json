@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "912651817030",
+    "project_id": "for-aplay-muti7l",
+    "storage_bucket": "for-aplay-muti7l.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912651817030:android:f04776fc83eae8f1ab3a47",
+        "android_client_info": {
+          "package_name": "com.mycompany.foraplay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL7m4q4eo67FPaaYKkALKP2z-jTcjVrgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
